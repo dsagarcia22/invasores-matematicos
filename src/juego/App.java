@@ -13,7 +13,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("Invasores Matematicos");
-
+        stage.setResizable(false);
         ControlEscenas sceneManager = new ControlEscenas(stage);
         sceneManager.mostrarMenuPrincipal();
     }

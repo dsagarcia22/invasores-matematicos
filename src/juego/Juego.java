@@ -66,8 +66,8 @@ public class Juego {
 
     // Genera una operacion de suma o resta (Proxima Actualizacion: Genera una operacion de suma, resta, multiplicacion y division dependiendo del nivel actual)
     public String generarPregunta() {
-        Pregunta pregunta = new Pregunta();
-        String preguntaTexto = pregunta.getOperacion();
+        GeneradorPregunta pregunta = new GeneradorPregunta();
+        String preguntaTexto = pregunta.getOperacion(this.nivel);
         setResultado(pregunta.getSolucion());
         return preguntaTexto;
     }

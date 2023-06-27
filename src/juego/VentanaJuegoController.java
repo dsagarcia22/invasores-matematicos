@@ -14,7 +14,7 @@ public class VentanaJuegoController {
     private ControlEscenas sceneManager;
 
     // Crea un objeto de clase juego
-    Juego juego;
+    private Juego juego;
 
     // Objeto que controla la logica del juego como las vidas, niveles, y preguntas.
     @FXML
@@ -55,8 +55,8 @@ public class VentanaJuegoController {
         Random random = new Random();
         List<Button> buttons = Arrays.asList(opcion1,opcion2,opcion3);
         String text1 = result + "";
-        String text2 = (result + random.nextInt(100) + 1 )+ "";
-        String text3 = (result - random.nextInt(100) + 1 )+ "";
+        String text2 = (result + random.nextInt(50) + 1 )+ "";
+        String text3 = (result - random.nextInt(50) + 1 )+ "";
         List<String> texts = Arrays.asList(text1, text2, text3);
 
         Collections.shuffle(texts);

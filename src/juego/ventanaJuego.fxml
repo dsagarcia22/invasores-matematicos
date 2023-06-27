@@ -2,27 +2,58 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.VentanaJuegoController">
    <children>
-      <Label id="preguntaOperacion" fx:id="operacionTexto" layoutX="234.0" layoutY="71.0" text="Operacion" textAlignment="CENTER">
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/fondoVentanaJuego.png" />
+         </image>
+      </ImageView>
+      <Label id="preguntaOperacion" fx:id="operacionTexto" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="222.0" prefHeight="40.0" prefWidth="203.0" text="Operacion" textAlignment="CENTER" textFill="#92ff00" textOverrun="CENTER_ELLIPSIS">
          <font>
-            <Font size="29.0" />
+            <Font name="OCR A Extended" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="opcion2" layoutX="268.0" layoutY="238.0" mnemonicParsing="false" onAction="#opcion2Evento" text="Opcion 2" />
-      <Button fx:id="opcion3" layoutX="447.0" layoutY="238.0" mnemonicParsing="false" onAction="#opcion3Evento" text="Opcion 3" />
-      <Button fx:id="opcion1" layoutX="80.0" layoutY="238.0" mnemonicParsing="false" onAction="#opcion1Evento" text="Opcion 1" />
-      <Label fx:id="vidasTexto" layoutX="14.0" layoutY="356.0" text="Vidas">
+      <ImageView fitHeight="147.0" fitWidth="164.0" layoutX="54.0" layoutY="37.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/enemy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="164.0" layoutX="218.0" layoutY="37.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/enemy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="164.0" layoutX="382.0" layoutY="37.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/enemy.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="opcion2" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="119.0" minWidth="100.0" mnemonicParsing="false" onAction="#opcion2Evento" opacity="0.74" style="-fx-background-color: black;" text="Opcion 2" textAlignment="CENTER" textFill="#ffee00">
          <font>
-            <Font size="20.0" />
+            <Font name="OCR A Extended" size="15.0" />
+         </font></Button>
+      <Button fx:id="opcion3" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="119.0" minWidth="100.0" mnemonicParsing="false" onAction="#opcion3Evento" opacity="0.74" style="-fx-background-color: black;" text="Opcion 3" textAlignment="CENTER" textFill="#ffee00">
+         <font>
+            <Font name="OCR A Extended" size="15.0" />
+         </font></Button>
+      <Button fx:id="opcion1" alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="119.0" minWidth="100.0" mnemonicParsing="false" onAction="#opcion1Evento" opacity="0.74" style="-fx-background-color: black;" text="Opcion 1" textAlignment="CENTER" textFill="#ffee00">
+         <font>
+            <Font name="OCR A Extended" size="15.0" />
+         </font></Button>
+      <Label fx:id="vidasTexto" layoutX="14.0" layoutY="365.0" text="Vidas" textFill="RED">
+         <font>
+            <Font name="OCR A Extended" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="nivelTexto" layoutX="16.0" layoutY="14.0" text="Nivel">
+      <Label fx:id="nivelTexto" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="-1.0" prefHeight="30.0" prefWidth="275.0" text="Nivel" textAlignment="CENTER" textFill="#ffee00">
          <font>
-            <Font size="20.0" />
+            <Font name="OCR A Extended" size="20.0" />
          </font>
       </Label>
    </children>
