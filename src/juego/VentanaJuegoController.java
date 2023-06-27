@@ -29,6 +29,8 @@ public class VentanaJuegoController {
     Label operacionTexto;
     @FXML
     Label nivelTexto;
+    @FXML
+    Label nombreTexto;
 
     // Incializa el control de escenas
     public void setSceneManager(ControlEscenas sceneManager) {
@@ -36,8 +38,9 @@ public class VentanaJuegoController {
     }
 
     // Inicializa el objeto de clase juego y genera un nivel
-    public void EmpezarJuego() {
+    public void EmpezarJuego(String nombrePiloto) {
         this.juego = new Juego();
+        nombreTexto.setText("Piloto: " + nombrePiloto);
         generarNivel();
     }
 

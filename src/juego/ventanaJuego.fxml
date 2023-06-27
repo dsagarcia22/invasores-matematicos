@@ -46,7 +46,7 @@
          <font>
             <Font name="OCR A Extended" size="15.0" />
          </font></Button>
-      <Label fx:id="vidasTexto" layoutX="14.0" layoutY="365.0" text="Vidas" textFill="RED">
+      <Label fx:id="vidasTexto" layoutX="14.0" layoutY="369.0" text="Vidas" textFill="RED">
          <font>
             <Font name="OCR A Extended" size="20.0" />
          </font>
@@ -54,6 +54,11 @@
       <Label fx:id="nivelTexto" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="-1.0" prefHeight="30.0" prefWidth="275.0" text="Nivel" textAlignment="CENTER" textFill="#ffee00">
          <font>
             <Font name="OCR A Extended" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombreTexto" layoutX="339.0" layoutY="364.0" minWidth="150.0" text="Piloto: " textFill="#09ff00">
+         <font>
+            <Font size="20.0" />
          </font>
       </Label>
    </children>

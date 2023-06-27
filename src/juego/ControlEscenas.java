@@ -34,7 +34,7 @@ public class ControlEscenas {
     }
 
     // Crea la ventana de juego con el archivo FXML e inizializa el juego cuando es llamado
-    public void mostrarVentanaJuego() {
+    public void mostrarVentanaJuego(String nombrePiloto) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("ventanaJuego.fxml"));
             Parent root = loader.load();
@@ -42,7 +42,7 @@ public class ControlEscenas {
             VentanaJuegoController gameWindowController = loader.getController();
             gameWindowController.setSceneManager(this);
             // Set up the game window controller as needed
-            gameWindowController.EmpezarJuego();
+            gameWindowController.EmpezarJuego(nombrePiloto);
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
